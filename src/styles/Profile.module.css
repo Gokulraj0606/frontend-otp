@@ -1,0 +1,13 @@
+.glass {
+    height: 5/6;
+    width: 5/6;
+}
+
+.profile_img {
+    width: 40;
+    cursor: pointer;
+}
+
+.textbox {
+    width: 3/4;
+}
