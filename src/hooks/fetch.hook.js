@@ -17,7 +17,7 @@ export default function useFetch(query) {
 
                 const { username } = !query ? await getUsername() : '';
 
-                const { data, status } = !query ? await axios.get(`/api/user/${username}`) : await axios.get(`/api/${query}`);
+                const { data, status } = !query ? await axios.get(`https://otp-backend-4sry.onrender.com/api/user/${username}`) : await axios.get(`https://otp-backend-4sry.onrender.com/api/${query}`);
 
                 if (status === 201) {
                     setData(prev => ({ ...prev, isLoading: false }));

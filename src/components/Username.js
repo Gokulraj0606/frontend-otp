@@ -15,7 +15,7 @@ export default function Username() {
 
     const formik = useFormik({
         initialValues: {
-            username: 'example123'
+            username: ''
         },
         validate: usernameValidate,
         validateOnBlur: false,
@@ -49,12 +49,17 @@ export default function Username() {
                         <div className="textbox flex flex-col items-center gap-6">
                             <input {...formik.getFieldProps('username')} className={styles.textbox} type="text" placeholder='Username' />
                             <button className={styles.btn} type='submit'>Let's Go</button>
+
                         </div>
 
                         <div className="text-center py-4">
                             <span className='text-gray-500'>Not a Member <Link className='text-red-500' to="/register">Register Now</Link></span>
                         </div>
-
+                        <div className='testing'>
+                            <h6>For Testing</h6>
+                            <h6>username:admin123</h6>
+                            <h6>password:admin@123</h6>
+                        </div>
                     </form>
 
                 </div>
