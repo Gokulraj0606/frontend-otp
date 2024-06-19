@@ -9,7 +9,7 @@ import { useAuthStore } from '../store/store'
 import { verifyPassword } from '../helper/helper'
 import styles from '../styles/Username.module.css';
 
-export default function Password() {
+export default function Passwordnew() {
 
     const navigate = useNavigate()
     const { username } = useAuthStore(state => state.auth)
@@ -62,14 +62,14 @@ export default function Password() {
                             <img src={apiData?.profile || avatar} className={styles.profile_img} alt="avatar" />
                         </div>
 
-                        {/* <div className="textbox flex flex-col items-center gap-6">
+                        <div className="textbox flex flex-col items-center gap-6">
                             <input {...formik.getFieldProps('password')} className={styles.textbox} type="text" placeholder='Password' />
                             <button className={styles.btn} type='submit'>Sign In</button>
-                        </div> */}
-
-                        <div className="text-center py-4">
-                            <span className='text-gray-500'>To Get OTP <Link className='text-red-500' to="/recovery">Click Here</Link></span>
                         </div>
+
+                        {/* <div className="text-center py-4">
+                            <span className='text-gray-500'>To Get OTP <Link className='text-red-500' to="/recovery">Click Here</Link></span>
+                        </div> */}
 
                     </form>
 

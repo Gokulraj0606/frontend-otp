@@ -33,7 +33,7 @@ export default function Reset() {
                 error: <b>Could not Reset!</b>
             });
 
-            resetPromise.then(function () { navigate('/password') })
+            resetPromise.then(function () { navigate('/passwordnew') })
 
         }
     })
@@ -41,7 +41,7 @@ export default function Reset() {
 
     if (isLoading) return <h1 className='text-2xl font-bold'>isLoading</h1>;
     if (serverError) return <h1 className='text-xl text-red-500'>{serverError.message}</h1>
-    if (status && status !== 201) return <Navigate to={'/password'} replace={true}></Navigate>
+    if (status && status !== 201) return <Navigate to={'/passwordnew'} replace={true}></Navigate>
 
     return (
         <div className="container mx-auto">
@@ -52,17 +52,17 @@ export default function Reset() {
                 <div className={styles.glass} style={{ width: "50%" }}>
 
                     <div className="title flex flex-col items-center">
-                        <h4 className='text-5xl font-bold'>Reset</h4>
+                        <h4 className='text-5xl font-bold'>PASSWORD</h4>
                         <span className='py-4 text-xl w-2/3 text-center text-gray-500'>
-                            Enter new password.
+                            Please Enter Password
                         </span>
                     </div>
 
                     <form className='py-20' onSubmit={formik.handleSubmit}>
                         <div className="textbox flex flex-col items-center gap-6">
-                            <input {...formik.getFieldProps('password')} className={styles.textbox} type="text" placeholder='New Password' />
-                            <input {...formik.getFieldProps('confirm_pwd')} className={styles.textbox} type="text" placeholder='Repeat Password' />
-                            <button className={styles.btn} type='submit'>Reset</button>
+                            <input {...formik.getFieldProps('password')} className={styles.textbox} type="text" placeholder=' Password' />
+                            <input {...formik.getFieldProps('confirm_pwd')} className={styles.textbox} type="text" placeholder='Confrim Password' />
+                            <button className={styles.btn} type='submit'>Click Here</button>
                         </div>
 
                     </form>

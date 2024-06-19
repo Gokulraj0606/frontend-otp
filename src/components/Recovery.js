@@ -60,9 +60,9 @@ export default function Recovery() {
                 <div className={styles.glass}>
 
                     <div className="title flex flex-col items-center">
-                        <h4 className='text-5xl font-bold'>Recovery</h4>
+                        <h4 className='text-5xl font-bold'>OTP</h4>
                         <span className='py-4 text-xl w-2/3 text-center text-gray-500'>
-                            Enter OTP to recover password.
+                            Enter OTP to verify your account.
                         </span>
                     </div>
 
@@ -77,7 +77,7 @@ export default function Recovery() {
                                 <input onChange={(e) => setOTP(e.target.value)} className={styles.textbox} type="text" placeholder='OTP' />
                             </div>
 
-                            <button className={styles.btn} type='submit'>Recover</button>
+                            <button className={styles.btn} type='submit'>Log In</button>
                         </div>
                     </form>
 

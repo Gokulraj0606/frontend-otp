@@ -55,11 +55,11 @@ export default function Username() {
                         <div className="text-center py-4">
                             <span className='text-gray-500'>Not a Member <Link className='text-red-500' to="/register">Register Now</Link></span>
                         </div>
-                        <div className='testing'>
+                        {/* <div className='testing'>
                             <h6>For Testing</h6>
                             <h6>username:admin123</h6>
                             <h6>password:admin@123</h6>
-                        </div>
+                        </div> */}
                     </form>
 
                 </div>
